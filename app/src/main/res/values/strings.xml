@@ -1,0 +1,213 @@
+<resources>
+    <string name="launcher_label">ApnaShare</string>
+
+    <string name="app_name">Apna Share</string>
+
+    <string name="content_desc_for_app_logo" translatable="false">Apna Share Logo</string>
+    <string name="content_desc_for_close_btn">close</string>
+    <string name="content_desc_for_sheet_handle">handle</string>
+    <string name="content_desc_for_clear_all_btn">clear all</string>
+    <string name="content_desc_for_receiver_icon">receiver icon</string>
+    <string name="content_desc_for_permission_granted">Permission Granted</string>
+    <string name="content_desc_for_icon">icon</string>
+    <string name="content_desc_for_thumbnail">thumbnail</string>
+    <string name="content_desc_for_selection">Marked for selection</string>
+    <string name="content_desc_for_remove">Remove</string>
+    <string name="content_desc_for_play">Play</string>
+
+    <!--Main UI Strings-->
+    <string name="app_slogan">Share photos, videos, music etc. at lightning speed</string>
+    <string name="btn_title_send">Send</string>
+    <string name="btn_title_receive">Receive</string>
+    <string name="tv_title_feedback">Have a suggestion or feedback?</string>
+    <string name="made_in_india">Made In India</string>
+    <string name="title_privacy_policy">Privacy Policy</string>
+    <string name="app_share_text">Try out %1$s \"Made in India\" app with NO ADS and NO PERSONAL DATA IS COLLECTED. It\'s the best alternative of other files sharing apps.\nPlease give it a try. I\'m using it &amp; it worth it!\n\nhttps://play.google.com/store/apps/details?id=%2$s</string>
+
+    <!--Main toolbar menu Strings-->
+    <string name="menu_item_title_share">Share</string>
+    <string name="menu_item_title_crash">Crash</string>
+
+    <!--Files Selection UI Strings-->
+    <string name="files_selection_subtitle">Select items to send to your friend</string>
+    <string name="grant_storage_permission">Grant Storage Permission</string>
+    <string name="grant_storage_permission_dialog_description">Tap settings to open App Permission Settings and grant Storage permission from there.</string>
+    <string name="storage_permission_desc">We need your storage permission in order to display apps, images and other files</string>
+    <string name="btn_title_not_selected">Not Selected</string>
+    <string name="btn_title_selected">Selected (%d)</string>
+    <string name="btn_title_send_files">Send Files</string>
+    <string name="selection_tab_files">Files</string>
+    <string name="selection_tab_music">Music</string>
+    <string name="selection_tab_apps">Apps</string>
+    <string name="selection_tab_images">Images</string>
+    <string name="selection_tab_videos">Videos</string>
+
+    <!--Permissions UI Strings-->
+    <string name="permissions_title">Preparations</string>
+    <string name="permissions_subtitle">Before you continue, you need to set up a few things</string>
+    <string name="btn_title_continue">Continue</string>
+    <string name="permission_action_allow">Allow</string>
+    <string name="permission_action_turn_on">Turn On</string>
+    <string name="permission_location_name">Turn On Location</string>
+    <string name="permission_location_description">You need to turn on location access required by android system in order to find your friends nearby.</string>
+    <string name="permission_dialog_location_title">Grant Location Permission</string>
+    <string name="permission_dialog_location_description">Tap on settings to open app info settings and grant location permission from there.</string>
+    <string name="permission_storage_name">Allow Storage Access</string>
+    <string name="permission_storage_description">You need to allow read/write access to the device storage in order to receive files from your friends and save them.</string>
+    <string name="permission_dialog_storage_name">Grant Storage Permission</string>
+    <string name="permission_dialog_storage_description">Tap settings to open app info settings and grant storage permission from there.</string>
+    <string name="permission_modify_settings_name">Modify System Settings</string>
+    <string name="permission_modify_settings_description">Android versions before Oreo 8.0 require modify system settings permission in order to start hotspot for receiving files from your friends.</string>
+    <string name="permission_dialog_modify_settings_title">Modify System Settings</string>
+    <string name="permission_dialog_modify_settings_description_1">Tap on settings to open app info settings and grant modify system settings to this app.</string>
+    <string name="permission_dialog_modify_settings_description_2">Please allow modify system settings permission in the app info settings.</string>
+    <string name="permission_wifi_name">Turn On WiFi</string>
+    <string name="permission_wifi_description">You need to turn on wifi in order to connect to your friend nearby who is waiting for the files.</string>
+
+    <!--Receive UI Strings-->
+    <string name="hotspot_status_starting">Starting hotspot …</string>
+    <string name="hotspot_status_waiting">Waiting for sender to connect …</string>
+    <string name="hotspot_status_receiving">Receiving Files …</string>
+    <string name="hotspot_status_failed">Failed to receive files</string>
+    <string name="hotspot_status_received">All files are received successfully</string>
+    <string name="hotspot_status_error">Cannot start hotspot</string>
+    <string name="hotspot_status_failure">Hotspot failure</string>
+    <string name="qr_code">QR code</string>
+    <string name="qr_code_subtitle">Ask sender to scan this QR code</string>
+    <string name="label_receiver_name">Receiver Name</string>
+    <string name="label_receiver_password">Receiver Password</string>
+    <string name="hotspot_start_failed">Failed to start hotspot!</string>
+    <string name="tap_to_retry">Tap to retry</string>
+    <string name="label_received">Received</string>
+    <string name="hotspot_error_dismiss_btn">Dismiss</string>
+    <string name="hotspot_error_title">Hotspot Error</string>
+    <string name="hotspot_error_message">Some hardware problem is preventing hotspot from starting! Please restart this app or restart your phone and try again.</string>
+    <string name="meta_file_status_waiting">Waiting …</string>
+    <string name="meta_file_status_receiving">Receiving …</string>
+    <string name="meta_file_status_received">Received</string>
+    <string name="meta_file_status_failed">Failed</string>
+
+    <!--Scan Receiver UI Strings-->
+    <string name="status_scan">Finding your nearby friends …</string>
+    <string name="status_scan_receiver_found">Found your nearby friends</string>
+    <string name="status_scan_receiver_not_found">No nearby friend found</string>
+    <string name="label_rescan">Tap to rescan your nearby friends</string>
+    <string name="receiver_item_subtitle">Tap to enter password or scan QR Code</string>
+    <string name="qr_scan_prompt">Scan receiver QR code</string>
+
+    <!--Files in send progress UI Strings-->
+    <string name="status_connecting_send_progress">Connecting to %s …</string>
+    <string name="status_receiver_connected">Connected to %s</string>
+    <string name="status_receiver_disconnected">Disconnected</string>
+    <string name="status_sending_files">Sending all files …</string>
+    <string name="status_send_failed">Failed to send files</string>
+    <string name="status_send_successful">All files sent successfully</string>
+    <string name="label_sent">Sent</string>
+    <string name="file_progress_status_waiting">Waiting …</string>
+    <string name="file_progress_status_sending">Sending …</string>
+    <string name="file_progress_status_sent">Sent</string>
+    <string name="file_progress_status_failed">Failed</string>
+
+    <!--ActionSend BottomSheet UI Strings-->
+    <string name="send_sheet_subtitle">Share with your friend</string>
+    <string name="send_sheet_btn_send">Send</string>
+    <string name="send_sheet_btn_cancel">Cancel</string>
+
+    <!--Selected Items BottomSheet UI Strings-->
+    <string name="selection_sheet_title">Selected Items</string>
+
+    <!--Password Dialog UI Strings-->
+    <string name="pwd_dialog_title">Connect to your friend</string>
+    <string name="pwd_dialog_input_hint">Enter Password</string>
+    <string name="pwd_dialog_connect_btn">Connect</string>
+    <string name="pwd_dialog_cancel_btn">Cancel</string>
+
+    <!--Permission Dialog UI Strings-->
+    <string name="perm_dialog_settings_btn">Settings</string>
+    <string name="perm_dialog_deny_btn">Deny</string>
+
+    <!--Exit Confirmation Dialog UI Strings-->
+    <string name="dialog_exit_confirm_title">Confirm Exit</string>
+    <string name="dialog_exit_confirm_description">Do you want to exit? This will cancel all files that are in progress.</string>
+    <string name="dialog_exit_confirm_yes">Yes</string>
+    <string name="dialog_exit_confirm_no">No</string>
+
+    <!--Protocol Mismatch Dialog UI Strings-->
+    <string name="protocol_mismatch_dialog_title">Oops</string>
+    <string name="protocol_mismatch_dialog_ok_btn">OK</string>
+    <string name="protocol_mismatch_dialog_update_btn">Update</string>
+    <string name="protocol_mismatch_dialog_back_btn">Back</string>
+    <string name="protocol_mismatch_dialog_msg_for_old">Your friend has newer version of this app. Please update your app to the latest version.</string>
+    <string name="protocol_mismatch_dialog_msg_for_new">You friend has older version of this app. Please tell your friend to update app to the latest version.</string>
+
+    <!--Receiver Scan Error Dialog UI Strings-->
+    <string name="scan_error_title">Scanning Problem</string>
+    <string name="scan_error_msg">Cannot find your nearby friends. Please try again after some time.</string>
+    <string name="scan_error_dismiss_btn">Dismiss</string>
+
+    <!--Invalid QR Dialog UI Strings-->
+    <string name="invalid_qr_title">Invalid Code</string>
+    <string name="invalid_qr_msg">Scanned QR Code was invalid.\nPlease ensure that you are scanning it on your friend\'s device.</string>
+    <string name="invalid_qr_close_btn">Close</string>
+
+    <!--Apps Selection UI Strings-->
+    <string name="msg_no_apps">No user apps found</string>
+
+    <!--Images selection UI Strings-->
+    <string name="msg_no_images">No images found</string>
+    <string name="chooser_title_image">View Image</string>
+
+    <!--Music selection UI Strings-->
+    <string name="msg_no_music">No music found</string>
+    <string name="chooser_title_music">Play Music</string>
+
+    <!--Videos selection UI Strings-->
+    <string name="msg_no_videos">No videos found</string>
+    <string name="chooser_title_video">Play Video</string>
+
+    <!--Files selection UI Strings-->
+    <string name="chooser_title_file">Open File</string>
+    <string name="dir_title_back">Go Back</string>
+    <string name="dir_desc_back">Parent Folder</string>
+    <string name="drive_name_internal">Internal Storage</string>
+    <string name="drive_name_external">External SD Card</string>
+
+    <!--RateBottomSheet Strings-->
+    <string name="rate_popup_ask_title">Like this App?</string>
+    <string name="rate_popup_ask_message">Do you like using Apna Share?</string>
+    <string name="rate_popup_ask_ok">Yes I do</string>
+    <string name="rate_popup_ask_no">Not really</string>
+
+    <string name="rate_popup_title">Rate this app</string>
+    <string name="rate_popup_message">Would you mind taking a moment to rate it?\nIt keeps us motivated and it won\'t take more than a minute. Thanks for your support!</string>
+    <string name="rate_popup_ok">Rate it now</string>
+    <string name="rate_popup_later">Remind me later</string>
+    <string name="rate_popup_no">No, thanks</string>
+    <!--End RateBottomSheet Strings-->
+
+    <!--Top title of BottomSheet which defaults to app name-->
+    <string name="cbs_title">@string/app_name</string>
+    <!--Bottom description of BottomSheet-->
+    <string name="cbs_description">Some problem occurred in Apna Share!\nPlease take a moment to report it and help developers to improve this app.</string>
+    <!--Label for the Positive Button-->
+    <string name="cbs_btn_positive">Report</string>
+    <!--Label for the Negative Button-->
+    <string name="cbs_btn_negative">Cancel</string>
+    <!--Content description string for BottomSheet drawable image-->
+    <string name="cbs_drawable_description">Apna Share Logo</string>
+    <!--Developer Email to set in email app. DO NOT FORGET TO SET IT IF YOU USE DEFAULT EMAIL REPORT ACTION-->
+    <string name="cbs_report_email_to">cod3rboy@hotmail.com</string>
+    <!--Subject for the email report-->
+    <string name="cbs_report_email_subject">Crash Report</string>
+    <!--Toast message string if no email app is installed on device-->
+    <string name="cbs_toast_no_email_app">No email app found on this device.</string>
+
+    <!--Privacy Policy Link-->
+    <string name="privacy_policy_link" translatable="false">https://gist.github.com/dkchalotra/4a39349be22d28127f1b1f1b135e6bf5</string>
+
+    <!--Feedback Strings-->
+    <string name="developer_email" translatable="false">cod3rboy@hotmail.com</string>
+    <string name="feedback_fail_msg">No email app installed. Please send an email at cod3rboy@hotmail.com for feedback or suggestion.</string>
+    <string name="feedback_subject">ApnaShare Feedback/Suggestion</string>
+    <string name="feedback_body">We are happy that you choose to improve ApnaShare by sharing with us your valuable feedback/suggestion.\n\nApp Version : %1$s\nAndroid Version : %2$s\n\nYou can write your feedback/suggestion below.\n</string>
+</resources>

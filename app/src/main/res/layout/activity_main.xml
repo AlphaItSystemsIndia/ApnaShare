@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.MainActivity">
+
+    <include layout="@layout/app_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingHorizontal="18dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:contentDescription="@string/content_desc_for_app_logo"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_app" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/app_name"
+            android:textAllCaps="true"
+            android:textColor="@color/accentTextColor"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/app_slogan"
+            android:textAlignment="center"
+            android:textAppearance="?textAppearanceCaption"
+            android:textColor="@color/secondaryTextColor" />
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textAppearance="?textAppearanceCaption"
+            android:textColor="@color/secondaryTextColor"
+            tools:text="v1.2" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/app_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:background="@drawable/bg_app_main"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_send"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:paddingHorizontal="56dp"
+            android:paddingVertical="10dp"
+            android:text="@string/btn_title_send"
+            android:textAlignment="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            app:backgroundTint="@color/white"
+            app:cornerRadius="50dp"
+            app:icon="@drawable/ic_send"
+            app:iconGravity="end"
+            app:layout_constraintBottom_toTopOf="@id/btn_receive"
+            app:layout_constraintEnd_toEndOf="@id/btn_receive"
+            app:layout_constraintStart_toStartOf="@id/btn_receive"
+            app:strokeColor="@color/colorAccent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_receive"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingHorizontal="56dp"
+            android:paddingVertical="10dp"
+            android:text="@string/btn_title_receive"
+            android:textAlignment="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            app:backgroundTint="@color/white"
+            app:cornerRadius="50dp"
+            app:icon="@drawable/ic_receive"
+            app:iconGravity="end"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/link_feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="@string/tv_title_feedback"
+            android:textAlignment="gravity"
+            android:textAppearance="?textAppearanceCaption"
+            android:textColor="@color/accentTextColor"
+            app:layout_constraintBottom_toTopOf="@id/app_footer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_receive" />
+
+        <LinearLayout
+            android:id="@+id/app_footer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="2dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="@string/made_in_india"
+                android:textAlignment="gravity"
+                android:textAppearance="?textAppearanceCaption"
+                android:textColor="@color/secondaryTextColor" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:background="#dddddd" />
+
+            <TextView
+                android:id="@+id/policy_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="@string/title_privacy_policy"
+                android:textAlignment="gravity"
+                android:textAppearance="?textAppearanceCaption"
+                android:textColor="@color/colorAccent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

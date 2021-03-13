@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="4dp"
+    app:contentPadding="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_icon_music"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:contentDescription="@string/content_desc_for_icon"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder_music"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_tick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:alpha="0.8"
+            android:contentDescription="@string/content_desc_for_selection"
+            android:src="@drawable/ic_checked"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/iv_icon_music"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_icon_music"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_title_music"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="2dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/primaryTextColor"
+            app:layout_constraintBottom_toTopOf="@+id/tv_music_size"
+            app:layout_constraintEnd_toStartOf="@id/iv_tick"
+            app:layout_constraintStart_toEndOf="@id/iv_icon_music"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Music Name - Made by someone" />
+
+        <TextView
+            android:id="@+id/tv_music_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?textAppearanceCaption"
+            android:textColor="@color/secondaryTextColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tv_title_music"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_music"
+            tools:text="5MB" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

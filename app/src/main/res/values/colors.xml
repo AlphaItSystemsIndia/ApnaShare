@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/saffron</color>
+    <color name="colorPrimaryDark">@color/white</color>
+    <color name="colorAccent">@color/accentColor</color>
+
+    <color name="saffron">#ff9933</color>
+    <color name="white">#ffffff</color>
+
+    <color name="primarySurfaceColor">@color/white</color>
+    <color name="secondarySurfaceColor">#eeeeee</color>
+    <color name="accentColor">@color/saffron</color>
+    <color name="primaryTextColor">#222222</color>
+    <color name="secondaryTextColor">#999999</color>
+    <color name="accentTextColor">@color/accentColor</color>
+    <color name="primaryTextColorInverted">#ffffff</color>
+    <color name="secondaryTextColorInverted">#eeeeee</color>
+    <color name="fileProgressColor">#88FF9933</color>
+    <color name="fileBackgroundColor">#888888</color>
+    <color name="colorListDivider">#EEEEEE</color>
+</resources>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/accentColor"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:paddingVertical="8dp">
+
+        <ImageButton
+            android:id="@+id/btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:contentDescription="@string/content_desc_for_close_btn"
+            android:paddingHorizontal="6dp"
+            android:src="@drawable/ic_close_white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:drawableStart="@drawable/ic_app_sm_white"
+            android:drawablePadding="4dp"
+            android:text="@string/app_name"
+            android:textAllCaps="true"
+            android:textColor="@color/primaryTextColorInverted"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toTopOf="@id/tv_status"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/secondaryTextColorInverted"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/app_name"
+            tools:text="@string/hotspot_status_starting" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_hotspot_details"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:alpha="0"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:alpha="1"
+        tools:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_scan"
+            android:gravity="center"
+            android:letterSpacing="0.05"
+            android:text="@string/qr_code"
+            android:textAlignment="gravity"
+            android:textAllCaps="true"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@color/primaryTextColorInverted" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/qr_code_subtitle"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/secondaryTextColorInverted" />
+
+        <ImageView
+            android:id="@+id/iv_qr_code"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_marginVertical="8dp"
+            android:background="@drawable/bg_qr_code"
+            android:contentDescription="@string/qr_code"
+            android:padding="20dp"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.05"
+            android:text="@string/label_receiver_name"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/primaryTextColorInverted"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_hotspot_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/secondaryTextColorInverted"
+            tools:text="Hotspot name here" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.05"
+            android:text="@string/label_receiver_password"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/primaryTextColorInverted"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_hotspot_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.05"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/secondaryTextColorInverted"
+            tools:text="fakers2349523dfs" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_reload"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:alpha="0"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:alpha="1"
+        tools:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/hotspot_start_failed"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/secondaryTextColorInverted" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/reload_view"
+            android:layout_width="wrap_content"
+            android:layout_height="280dp"
+            android:scaleType="fitCenter"
+            app:lottie_autoPlay="false"
+            app:lottie_colorFilter="#FFFFFF"
+            app:lottie_loop="false"
+            app:lottie_rawRes="@raw/reload" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/tap_to_retry"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/secondaryTextColorInverted" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_receive_items"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:alpha="0"
+        android:background="@color/accentColor"
+        android:visibility="gone"
+        tools:alpha="1"
+        tools:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/layout_circle"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:background="@drawable/bg_total_size_received"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_size_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primaryTextColorInverted"
+                android:textSize="22sp"
+                tools:text="1023.99" />
+
+            <TextView
+                android:id="@+id/tv_size_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/primaryTextColorInverted"
+                tools:text="bytes" />
+
+            <TextView
+                android:id="@+id/tv_label_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/label_received"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/secondaryTextColorInverted" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_meta_files"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/white"
+            android:padding="3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layout_circle" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

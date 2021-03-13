@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp">
+
+    <ImageView
+        android:id="@+id/iv_permission_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_permission_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_permission_name"
+        tools:src="@drawable/ic_gps"
+        android:contentDescription="@string/content_desc_for_icon" />
+
+    <TextView
+        android:id="@+id/tv_permission_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="4dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/accentTextColor"
+        app:layout_constraintEnd_toStartOf="@id/iv_checked"
+        app:layout_constraintStart_toEndOf="@id/iv_permission_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Location Permission" />
+
+    <TextView
+        android:id="@+id/tv_permission_desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textAppearance="?textAppearanceCaption"
+        android:textColor="@color/secondaryTextColor"
+        app:layout_constraintEnd_toEndOf="@id/tv_permission_name"
+        app:layout_constraintStart_toStartOf="@id/tv_permission_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_permission_name"
+        tools:text="This is some description for why this permission is needed by application." />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_action"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textAllCaps="false"
+        android:visibility="visible"
+        app:backgroundTint="@color/white"
+        android:textAppearance="?android:textAppearanceSmall"
+        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tv_permission_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_permission_desc"
+        app:strokeColor="@color/colorAccent"
+        tools:text="Allow" />
+
+    <ImageView
+        android:id="@+id/iv_checked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/content_desc_for_permission_granted"
+        android:src="@drawable/ic_checked"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
